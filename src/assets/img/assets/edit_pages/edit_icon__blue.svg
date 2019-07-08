@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   fill="none"
+   version="1.1"
+   id="svg841"
+   sodipodi:docname="edit_icon__blue.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata847">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs845" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview843"
+     showgrid="false"
+     inkscape:zoom="42.85"
+     inkscape:cx="10"
+     inkscape:cy="10"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg841" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M17.2584 4.69166C17.5834 5.01666 17.5834 5.54166 17.2584 5.86666L15.7334 7.39166L12.6084 4.26666L14.1334 2.74166C14.4584 2.41666 14.9834 2.41666 15.3084 2.74166L17.2584 4.69166ZM2.5 17.5V14.375L11.7167 5.15833L14.8417 8.28333L5.625 17.5H2.5Z"
+     fill="white"
+     id="path832" />
+  <mask
+     id="mask0"
+     mask-type="alpha"
+     maskUnits="userSpaceOnUse"
+     x="2"
+     y="2"
+     width="16"
+     height="16">
+    <path
+       fill-rule="evenodd"
+       clip-rule="evenodd"
+       d="M17.2584 4.69166C17.5834 5.01666 17.5834 5.54166 17.2584 5.86666L15.7334 7.39166L12.6084 4.26666L14.1334 2.74166C14.4584 2.41666 14.9834 2.41666 15.3084 2.74166L17.2584 4.69166ZM2.5 17.5V14.375L11.7167 5.15833L14.8417 8.28333L5.625 17.5H2.5Z"
+       fill="white"
+       id="path834" />
+  </mask>
+  <g
+     mask="url(#mask0)"
+     id="g839"
+     style="fill:#3366cc">
+    <path
+       d="M 0,0 H 20 V 20 H 0 Z"
+       id="path837"
+       style="fill:#2e368f"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

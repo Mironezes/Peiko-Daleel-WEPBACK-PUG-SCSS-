@@ -7,19 +7,19 @@ $(document).ready(function() {
         let y = window.scrollY;
         if (y > 80) {
             if ($('body').hasClass('homepage')) {
-                $('.header_wrapper').removeClass('mobile_transparent');
-                $('.header_wrapper').addClass('white');
-                $('.desktop_toggle_menu_icon').addClass('blue');
-                $('.header_wrapper .logo').attr('src', '/assets/img/assets/header/logo__dark.svg');
-                $('.desktop_toggle_menu__item').removeClass('white');
+                $('.header').removeClass('mobile-transparent');
+                $('.header').addClass('white');
+                $('.header-desktop-menu-toggle').addClass('blue');
+                $('.header .logo').attr('src', '/assets/img/assets/header/logo__dark.svg');
+                $('.header-desktop-menu-toggle').removeClass('white');
             }
         } else {
             if ($('body').hasClass('homepage')) {
-                $('.header_wrapper').removeClass('white');
-                $('.desktop_toggle_menu_icon').removeClass('blue');
-                $('.header_wrapper').addClass('mobile_transparent');
-                $('.header_wrapper .logo').attr('src', '/assets/img/assets/header/logo__white.svg');
-                $('.desktop_toggle_menu__item').addClass('white');
+                $('.header').removeClass('white');
+                $('.header-desktop-menu-toggle').removeClass('blue');
+                $('.header').addClass('mobile-transparent');
+                $('.header .logo').attr('src', '/assets/img/assets/header/logo__white.svg');
+                $('.header-desktop-menu-toggle').addClass('white');
             }
         }
     }
@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 
     function suppliersFixedMenu() {
-        $('.page_fixed_menu_list a[href*=\\#]').on('click', function(event) {
+        $('.page-fixed-menu-list a[href*=\\#]').on('click', function(event) {
             event.preventDefault();
             $('html,body').animate({
                 scrollTop: $(this.hash).offset().top - 160
@@ -43,7 +43,7 @@ $(document).ready(function() {
     }
 
     function suppliersMenu() {
-        $('.suppliers_profile_banner_menu_list a[href*=\\#], .product_page_banner_menu_list a[href*=\\#]').on('click', function(event) {
+        $('.suppliers-profile-banner-menu-list a[href*=\\#], .product-page-banner-menu-list a[href*=\\#]').on('click', function(event) {
             event.preventDefault();
             $('html,body').animate({
                 scrollTop: $(this.hash).offset().top - 98
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 
     function categoryMenu() {
-        $('.left_sidebar_menu a[href*=\\#]').on('click', function(event) {
+        $('.left-sidebar-menu a[href*=\\#]').on('click', function(event) {
             event.preventDefault();
             $('html,body').animate({
                 scrollTop: $(this.hash).offset().top - 120
@@ -79,16 +79,16 @@ $(document).ready(function() {
 
 
     function toggleSubMenuBar() {
-        $('.desktop_toggle_menu_icon').on("click", function() {
-            let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper');
+        $('.header-desktop-menu-toggle').on("click", function() {
+            let toggleSubMenu = $('.desktop-toggle-menu-wrapper');
 
             if (toggleSubMenu.hasClass('opened')) {
                 toggleSubMenu.removeClass('opened');
             } else {
 
-                if($('.registration_toggle_menu').hasClass('opened')) {               
-                    $('.registration_toggle_menu').removeClass('opened');
-                    $('.registration_toggle_menu_button').removeClass('active');
+                if($('.registration-toggle-menu').hasClass('opened')) {               
+                    $('.registration-toggle-menu').removeClass('opened');
+                    $('.registration-toggle-menu--button').removeClass('active');
                 }
 
 
@@ -101,20 +101,20 @@ $(document).ready(function() {
 
 
     function registrationToggleMenuBar() {
-        $('.registration_toggle_menu_button').on("click", function() {
+        $('.registration-toggle-menu--button').on("click", function() {
 
-            let toggleSubMenu = $('.registration_toggle_menu');
-            let toggleSubMenuButton = $('.registration_toggle_menu_button');
+            let toggleSubMenu = $('.registration-toggle-menu');
+            let toggleSubMenuButton = $('.registration-toggle-menu--button');
 
             if (toggleSubMenu.hasClass('opened')) {
                 toggleSubMenuButton.removeClass('active');
                 toggleSubMenu.removeClass('opened');
             } else {
 
-                if($('.desktop_toggle_menu_block_wrapper').hasClass('opened')) {
-                    $('.desktop_toggle_menu_icon').removeClass('is-active');
-                    $('.desktop_toggle_menu_icon').addClass('is-unactive');                    
-                    $('.desktop_toggle_menu_block_wrapper').removeClass('opened');
+                if($('.desktop-toggle-menu-wrapper').hasClass('opened')) {
+                    $('.header-desktop-menu-toggle').removeClass('is-active');
+                    $('.header-desktop-menu-toggle').addClass('is-unactive');                    
+                    $('.desktop-toggle-menu-wrapper').removeClass('opened');
                 }
 
 
@@ -127,14 +127,14 @@ $(document).ready(function() {
 
 
     function toggleSearchBar() {
-        $('.header_navigation_search_toggle').on("click", function(e) {
+        $('.header-navigation-search-toggle').on("click", function(e) {
             e.stopPropagation();
 
-            let searchIcon = $(this).find('.search_icon');
-            let closeIcon = $(this).find('.close_icon');
+            let searchIcon = $(this).find('.search-icon');
+            let closeIcon = $(this).find('.close-icon');
 
 
-            let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper');
+            let toggleSubMenu = $('.desktop-toggle-menu-block-wrapper');
 
             if (toggleSubMenu.hasClass('opened')) {
                 searchIcon.addClass('visible');
@@ -143,9 +143,9 @@ $(document).ready(function() {
             } else {
 
 
-                if($('.desktop_account_toggle_menu').hasClass('opened')) {               
-                    $('.desktop_account_toggle_menu').removeClass('opened');
-                    $('.header_account_button').removeClass('dropdown_rotation');
+                if($('.desktop-account-toggle-menu').hasClass('opened')) {               
+                    $('.desktop-account-toggle-menu').removeClass('opened');
+                    $('.header-account-button').removeClass('dropdown-rotation');
                 }
 
 
@@ -159,11 +159,11 @@ $(document).ready(function() {
 
         $(document).click(function(event) {
 
-            let searchIcon = $(this).find('.search_icon');
-            let closeIcon = $(this).find('.close_icon');
-            let toggleSubMenu = $('.desktop_toggle_menu_block_wrapper');
+            let searchIcon = $(this).find('.search-icon');
+            let closeIcon = $(this).find('.close-icon');
+            let toggleSubMenu = $('.desktop-toggle-menu-block-wrapper');
 
-            if ($(event.target).closest('.desktop_toggle_menu_block_wrapper').length == 0) {
+            if ($(event.target).closest('.desktop-toggle-menu-block-wrapper').length == 0) {
                 toggleSubMenu.removeClass('opened');
                 closeIcon.removeClass('visible');
                 searchIcon.addClass('visible');
@@ -176,51 +176,51 @@ $(document).ready(function() {
 
     
     function headerAccountButton() {
-        let headerAccountButtonWidth = $('.header_account_button').width();
-        let desktopToggleMenuWidth = $('.desktop_toggle_menu').width();
-        let toggleMenuSearchBarWidth = $('.desktop_toggle_menu__search_bar').css('width', desktopToggleMenuWidth + 48 + 20);
-        let toggleMenuSearchButton = $('.desktop_toggle_menu__search_button').css('width', headerAccountButtonWidth + 45);
+        let headerAccountButtonWidth = $('.header-account-button').width();
+        let desktopToggleMenuWidth = $('.desktop-toggle-menu').width();
+        let toggleMenuSearchBarWidth = $('.desktop-toggle-menu--search-bar').css('width', desktopToggleMenuWidth + 48 + 20);
+        let toggleMenuSearchButton = $('.desktop-toggle-menu--search-button').css('width', headerAccountButtonWidth + 45);
 
 
-        let supplierfilteringBlockWidth = $('.suppliers_filtering_desktop_block').width();
-        let mainCategoriesSortingServicesBlock = $('.main_categories_sorting_services .main_categories_sorting_block ').css('width', supplierfilteringBlockWidth + 42);
+        let supplierfilteringBlockWidth = $('.suppliers-filtering-desktop-block').width();
+        let mainCategoriesSortingServicesBlock = $('.main-categories-sorting-services .main-categories-sorting-block ').css('width', supplierfilteringBlockWidth + 42);
 
 
-        $('.header_account_button').on("click", function(e) {
+        $('.header-account-button').on("click", function(e) {
             e.stopPropagation()
 
             let headerAccountButton = $(this);
-            let desktopAccountToggleMenu = $('.desktop_account_toggle_menu');
+            let desktopAccountToggleMenu = $('.desktop-account-toggle-menu');
 
             if (desktopAccountToggleMenu.hasClass('opened')) {
                 desktopAccountToggleMenu.removeClass('opened');
-                headerAccountButton.removeClass('dropdown_rotation');
+                headerAccountButton.removeClass('dropdown-rotation');
             } else {
 
-                if($('.desktop_toggle_menu_block_wrapper').hasClass('opened')) {    
+                if($('.desktop-toggle-menu-block-wrapper').hasClass('opened')) {    
 
-                let searchIcon = $('.header_wrapper').find('.search_icon');
-                let closeIcon = $('.header_wrapper').find('.close_icon');
+                let searchIcon = $('.header').find('.search-icon');
+                let closeIcon = $('.header').find('.close-icon');
 
                     searchIcon.addClass('visible');
                     closeIcon.removeClass('visible');           
-                    $('.desktop_toggle_menu_block_wrapper').removeClass('opened');
+                    $('.desktop-toggle-menu-block-wrapper').removeClass('opened');
                 }
 
                 desktopAccountToggleMenu.addClass('opened');
-                headerAccountButton.addClass('dropdown_rotation');
+                headerAccountButton.addClass('dropdown-rotation');
             }
         });
 
 
         $(document).on("click", function(event) {
 
-            let desktopAccountToggleMenu = $('.desktop_account_toggle_menu');
-            let headerAccountButton = $('.header_account_button');
+            let desktopAccountToggleMenu = $('.desktop-account-toggle-menu');
+            let headerAccountButton = $('.header-account-button');
 
-            if ($(event.target).closest('.desktop_account_toggle_menu').length == 0) {
+            if ($(event.target).closest('.desktop-account-toggle-menu').length == 0) {
                 desktopAccountToggleMenu.removeClass('opened');
-                headerAccountButton.removeClass('dropdown_rotation');
+                headerAccountButton.removeClass('dropdown-rotation');
             }
         });
     }

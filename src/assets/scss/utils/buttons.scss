@@ -16,332 +16,332 @@
 	align-items: center;
 }
 
-.button.full_width {
+.button.full-width {
 	padding: 0 50px
 }
 
-.button__icon {
+.button--icon {
 	display: flex;
 	justify-content: center;
 	margin-right: 10px
 }
 
-.button__log_in {
+.button--log-in {
 	width: 50%;
 	height: 54px;
 	justify-content: center;
 	margin: 0 auto;
 }
 
-.dropdown_rotation::after {
+.dropdown-rotation::after {
 	transform: rotate(180deg);
 	transition: .3s
 }
 
-.button__blue {
-	color: $white_color;	
-	background: $primary_light_color
+.button--blue {
+	color: $white-color;	
+	background: $primary_default_color
 }
 
-.button__blue span {
-	color: $white_color;	
+.button--blue span {
+	color: $white-color;	
 }
 
-.registration_toggle_menu_button .button__icon {
+.registration-toggle-menu--button .button--icon {
 	margin-left: 10px;
 	margin-right: 0;
 }
 
-.registration_toggle_menu_button.active img {
+.registration-toggle-menu--button.active img {
 	transform: rotate(180deg);
 }
 
-.button__light_blue {
-	color: $primary_light_color;
-	border: 1px solid $primary_light_color;
-	background: $dark_05_color;
+.button--light-blue {
+	color: $primary-light-color;
+	border: 1px solid $primary-light-color;
+	background: $dark-05-color;
 	justify-content: center;
 }
 
-.button__light_blue:hover {
-	color: $white_color;
-	background: $primary_light_color;
-	border: 1px solid $primary_light_color;
+.button--light-blue:hover {
+	color: $white-color;
+	background: $primary-light-color;
+	border: 1px solid $primary-light-color;
 }
 
-.button__cv {
+.button--cv {
 	display: flex;
 	width: 260px;
 	padding: 30px;
-	border: 1px solid $primary_light_color;
+	border: 1px solid $primary-light-color;
 	border-radius: 5px;
 }
 
-.button__cv:hover {
-	color: $white_color;
-	background: $primary_light_color;
+.button--cv:hover {
+	color: $white-color;
+	background: $primary-light-color;
 }
 
-.button__cv:hover svg path {
-	fill: $white_color;
+.button--cv:hover svg path {
+	fill: $white-color;
 }
 
-.button__cv .button__cv_content {
+.button--cv .button--cv-content {
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
 }
 
-.button__add:hover svg path {
-	fill: $white_color;
+.button--add:hover svg path {
+	fill: $white-color;
 }
 
-.header_account_button {
+.header-account-button {
 	width: 190px;
 	padding-left: 25px;
 	padding-right: 20px
 }
 
-.load_more_button {
-	border: 1px solid $primary_light_color;
+.load-more-button {
+	border: 1px solid $primary-light-color;
 	border-radius: 5px
 }
 
-.load_more_button:hover {
-	color: $primary_light_color;
+.load-more-button:hover {
+	color: $primary-light-color;
 	background: #eceeee
 }
 
-.load_more_button:hover svg path {
-	fill: $primary_light_color
+.load-more-button:hover svg path {
+	fill: $primary-light-color
 }
 
-.main_page_categories_button {
+.main-page-categories-button {
 	width: 220px;
 	margin: 0 auto
 }
 
-.header_account_button {
+.header-account-button {
 	position: relative;
 	font-size: .9em;
 	color: #4b4c55
 }
 
-.header_account_button::after {
-	content: url('/img/assets/small_arrow_icon_blue.svg');
+.header-account-button::after {
+	content: url('/img/assets/small-arrow-icon-blue.svg');
 	position: relative;
 	top: 0;
 	right: -40px;
 	transition: .3s
 }
 
-.desktop_toggle_menu__search_button {
+.desktop-toggle-menu--search-button {
 	justify-content: center
 }
 
-.button__blue:hover {
-	background: $primary_light_color
+.button--blue:hover {
+	background: $primary-light-color
 }
 
-.button__bordered_blue {
+.button--bordered-blue {
 	color: #9ea8ab;
 	background: 0 0;
 	border: 1px solid #9ea8ab
 }
 
-.button__bordered_blue:hover {
-	color: $white_color;
-	border: 1px solid $primary_light_color;
-	background: $primary_light_color
+.button--bordered-blue:hover {
+	color: $white-color;
+	border: 1px solid $primary-light-color;
+	background: $primary-light-color
 }
 
-.button__bordered_yellow {
+.button--bordered-yellow {
 	color: #ffe69b;
 	background: 0 0;
 	border: 1px solid #ffc519
 }
 
-.button__bordered_yellow:hover {
-	color: $white_color;
+.button--bordered-yellow:hover {
+	color: $white-color;
 	border: 1px solid #ffd559;
 	background: #ffd559
 }
 
-.button__yellow {
+.button--yellow {
 	color: #1f2569;
 	background: #ffc519
 }
 
-.button__yellow:hover {
+.button--yellow:hover {
 	background: #ffd559
 }
 
-.button__white {
+.button--white {
 	color: #4b4c55;
 	border: 1px solid #9ea8ab
 }
 
-.button__edit:hover {
+.button--edit:hover {
 	color: #1F2569;
 }
 
-.button__archive,
-.button__delete {
+.button--archive,
+.button--delete {
 	border: 1px solid #D3D3D5;
-	background: $dark_05_color;
+	background: $dark-05-color;
 }
 
-.icon_only {
+.icon-only {
 	padding: 0 12px !important;
 }
 
-.button.icon_only span {
+.button.icon-only span {
 	color: #242E33 !important;
 	font-size: .9em !important;
 	font-weight: 400 !important;
 }
 
-.button__archive span {
-	color: $primary_light_color
+.button--archive span {
+	color: $primary-light-color
 }
 
-.button__archive:hover {
-	border: 1px solid $primary_light_color;
-	background: $primary_light_color;
+.button--archive:hover {
+	border: 1px solid $primary-light-color;
+	background: $primary-light-color;
 }
 
-.button__archive:hover span {
-	color: $white_color;
+.button--archive:hover span {
+	color: $white-color;
 }
 
-.button__archive:hover svg path {
-	fill: $white_color;
+.button--archive:hover svg path {
+	fill: $white-color;
 }
 
-.button__delete span {
-	color: $danger_color;
+.button--delete span {
+	color: $danger-color;
 }
 
-.button__delete:hover span {
-	color: $white_color;	
+.button--delete:hover span {
+	color: $white-color;	
 }
 
-.button__delete:hover {
+.button--delete:hover {
 
-	border: 1px solid $danger_color;
-	background: $danger_color;
+	border: 1px solid $danger-color;
+	background: $danger-color;
 }
 
-.button__delete:hover svg path {
-	fill: $white_color;
+.button--delete:hover svg path {
+	fill: $white-color;
 }
 
-.button__request_review {
+.button--request-review {
 	width: 220px;
-	border: 1px solid $primary_light_color;
+	border: 1px solid $primary-light-color;
 }
 
-.button__request_review span {
-	color: $primary_light_color;	
+.button--request-review span {
+	color: $primary-light-color;	
 }
 
-.button__request_review:hover {
-	color: $white_color;
-	border: 1px solid $primary_light_color;
-	background: $primary_light_color;
+.button--request-review:hover {
+	color: $white-color;
+	border: 1px solid $primary-light-color;
+	background: $primary-light-color;
 }
 
-.button__request_review:hover span {
-	color: $white_color;
+.button--request-review:hover span {
+	color: $white-color;
 }
 
-.button__request_review:hover svg path {
-	fill: $white_color;
+.button--request-review:hover svg path {
+	fill: $white-color;
 }
 
-.button__add_new {
-	border: 1px solid $success_color;	
+.button--add-new {
+	border: 1px solid $success-color;	
 	background: #ebf5e2;
 }
 
-.button__add_new span {
-	color: $success_color;	
+.button--add-new span {
+	color: $success-color;	
 }
 
-.button__add_new:hover {
-	background: $success_color;
+.button--add-new:hover {
+	background: $success-color;
 }
 
-.button__add_new:hover span {
-	color: $white_color;
+.button--add-new:hover span {
+	color: $white-color;
 }
 
-.button__add_new:hover svg path {
-	fill: $white_color;
+.button--add-new:hover svg path {
+	fill: $white-color;
 }
 
-.button__view {
+.button--view {
     color: #1f2569;
-    border: 1px solid $primary_light_color;
-    background: $dark_05_color;
+    border: 1px solid $primary-light-color;
+    background: $dark-05-color;
 }
 
-.button__view span {
+.button--view span {
 	margin-right: 10px;
 }
 
-.button__view:hover span {
-	color: $white_color;
+.button--view:hover span {
+	color: $white-color;
 }
 
-.button__view:hover {
-	border: 1px solid $primary_light_color;
-	background: $primary_light_color;
+.button--view:hover {
+	border: 1px solid $primary-light-color;
+	background: $primary-light-color;
 }
 
-.button__view:hover svg path {
-	fill: $white_color;
+.button--view:hover svg path {
+	fill: $white-color;
 }
 
-.creation_page_element_submit__file_submit_button {
+.creation-page-element-submit--file-submit-button {
 	width: 100%;
 	justify-content: center;
 }
 
-.creation_page_element__file_delete_button {
+.creation-page-element--file-delete-button {
 	width: 100%;
 	justify-content: center;
 	padding: 0;
 }
 
-.creation_page_element__file_delete_button .button__icon {
+.creation-page-element--file-delete-button .button--icon {
 	margin: 0;
 }
 
-.creation_page_element__file_delete_button:hover svg path {
-	fill: $white_color;
+.creation-page-element--file-delete-button:hover svg path {
+	fill: $white-color;
 }
 
-.main_categories_show_companies_button span {
+.main-categories-show-companies-button span {
 	padding: 0 5px
 }
 
-.button__white:hover {
-	color: $white_color;
-	background: $primary_light_color
+.button--white:hover {
+	color: $white-color;
+	background: $primary-light-color
 }
 
-.button__cancel {
-	background: $dark_05_color;
-	border: 1px solid $primary_light_color;
+.button--cancel {
+	background: $dark-05-color;
+	border: 1px solid $primary-light-color;
 }
 
-.button__cancel:hover {
-	color: $white_color;
-	background: $primary_light_color;
+.button--cancel:hover {
+	color: $white-color;
+	background: $primary-light-color;
 }
 
-.button__delete_yes:hover {
-	color: $white_color;
-	background: $danger_color;
+.button--delete-yes:hover {
+	color: $white-color;
+	background: $danger-color;
 }

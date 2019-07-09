@@ -1,11 +1,371 @@
-doctype html
-html(lang='en')
-    head
-        title Pizdos
-    body.authorized
-        header.header_wrapper
-            div.container
-                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. |
-                | Harum ex aliquid culpa et error eum nesciunt mollitia aspernatur | voluptatibus optio nulla esse eos tenetur voluptates, autem voluptatem, impedit assumenda rem!
-                | p uebans
+extends ../layout/main
+
+block variables
+    - var title = 'Homepage | Daleel';
+    - var pageClass = 'homepage';
+
+
+block content
+    section.main_page_banner_wrapper(style="background-image: url('/assets/img/img/main_banner_bg.jpg');")
+        .container
+            .main_page_banner_text_block
+            .main_page_banner_text_block_content
+                h1.main_page_banner_text_block__title OPERATIONAL EXCELLENCE
+                p.main_page_banner_text_block__desc
+                | Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.
+    section.main_page_navigation_wrapper
+        .container
+            ul.main_page_navigation_block
+            li.main_page_navigation_block__item
+                a(href='#')
+                span Suppliers
+                img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
+            li.main_page_navigation_block__item
+                a(href='#')
+                span Intelligence
+                img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
+            li.main_page_navigation_block__item
+                a(href='#')
+                span News
+                img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
+            li.main_page_navigation_block__item
+                a(href='#')
+                span Expert articles
+                img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
+    section.main_page_categories_wrapper
+        .container
+            .main_page_section_heading_block
+            h2 Intelligence with information that matters
+            span Actionable insight
+            .main_page_categories_tiles
+            .main_page_categories_tiles_left_column
+                #main_page_categories_tile__first.main_page_categories_tile(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
+                .main_page_categories_tile_inner
+                    a.main_page_categories_tile__main_link(href='#')
+                    h3 Site Surveys & Investigation
+                    .main_page_categories_tile_desc
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
+                    .main_page_categories_tile_tags
+                    a.tag(href='#') #tag-1
+                    a.tag(href='#') #long-long-tag-2
+                    a.tag(href='#') #tag-1
+                    a.tag(href='#') #long-long-tag-2
+                    button.tag.to_tags_modal ...
+                #main_page_categories_tile__fourth.main_page_categories_tile(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
+                .main_page_categories_tile_inner
+                    a.main_page_categories_tile__main_link(href='#')
+                    h3 Site Surveys & Investigation
+                    .main_page_categories_tile_desc
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    .main_page_categories_tile_tags
+                    a.tag(href='#') #tag-1
+                    a.tag(href='#') #long-long-tag-2
+                    button.tag.to_tags_modal ...
+            .main_page_categories_tiles_right_column
+                #main_page_categories_tile__second.main_page_categories_tile(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
+                .main_page_categories_tile_inner
+                    a.main_page_categories_tile__main_link(href='#')
+                    h3 Site Surveys & Investigation
+                    .main_page_categories_tile_desc
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum delsa
+                    .main_page_categories_tile_tags
+                    a.tag(href='#') #tag-1
+                    a.tag(href='#') #long-long-tag-2
+                    button.tag.to_tags_modal ...
+                .main_page_categories_tiles_right_column__sub_columns
+                .main_page_categories_tiles__third_column
+                    #main_page_categories_tile__third.main_page_categories_tile(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
+                    .main_page_categories_tile_inner
+                        a.main_page_categories_tile__main_link(href='#')
+                        h3 Site Surveys & Investigation
+                        .main_page_categories_tile_desc
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
+                        .main_page_categories_tile_tags
+                        a.tag(href='#') #tag-1
+                        a.tag(href='#') #long-long-tag-2
+                        button.tag.to_tags_modal ...
+                .main_page_categories_tile__fifth_and_sixth_column
+                    #main_page_categories_tile__fifth.main_page_categories_tile(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
+                    .main_page_categories_tile_inner
+                        a.main_page_categories_tile__main_link(href='#')
+                        h3 Site Surveys & Investigation
+                        .main_page_categories_tile_desc
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
+                        .main_page_categories_tile_tags
+                        a.tag(href='#') #tag-1
+                        a.tag(href='#') #long-long-tag-2
+                        button.tag.to_tags_modal ...
+                    #main_page_categories_tile__sixth.main_page_categories_tile(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
+                    .main_page_categories_tile_inner
+                        a.main_page_categories_tile__main_link(href='#')
+                        h3 Site Surveys & Investigation
+                        .main_page_categories_tile_desc
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
+                        .main_page_categories_tile_tags
+                        a.tag(href='#') #tag-1
+                        a.tag(href='#') #long-long-tag-2
+                        button.tag.to_tags_modal ...
+            a.main_page_categories_button.button.button__blue(href='#') View All Categories
+    section.last_forum_messages_wrapper
+        .container
+            .main_page_section_heading_block
+            h2 Questions & Answers
+            span Subheading
+            .last_forum_messages_tiles
+            .last_forum_messages_tile
+                .last_forum_messages_tile_inner
+                .last_forum_messages_tile_category
+                    span.last_forum_messages_tile_category__name Category
+                    span.last_forum_messages_tile_category__title Seismic Survey and Data Acquisition
+                .last_forum_messages_tile_question
+                    span.last_forum_messages_tile_question__name Question
+                    span.last_forum_messages_tile_question__title What is the purpouse of drilling rings in gas supply industry?
+                .last_forum_messages_tile_info
+                    .last_forum_messages_tile_info_answers
+                    img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
+                    span 118 answers
+                    .latest_news_tile_date
+                    img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
+                    span 24.01.2019
+                    .latest_news_tile_link_block
+                    a(href='#')
+                        span Go to Question
+                        img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+                .latest_news_tile_link_block
+                    a(href='#')
+                    span Go to Question
+                    img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+            .last_forum_messages_tile
+                .last_forum_messages_tile_inner
+                .last_forum_messages_tile_category
+                    span.last_forum_messages_tile_category__name Category
+                    span.last_forum_messages_tile_category__title Storage & Warehousing
+                .last_forum_messages_tile_question
+                    span.last_forum_messages_tile_question__name Question
+                    span.last_forum_messages_tile_question__title What is the purpouse of drilling rings in gas supply industry?
+                .last_forum_messages_tile_info
+                    .last_forum_messages_tile_info_answers
+                    img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
+                    span 118 answers
+                    .latest_news_tile_date
+                    img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
+                    span 24.01.2019
+                    .latest_news_tile_link_block
+                    a(href='#')
+                        span Go to Question
+                        img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+                .latest_news_tile_link_block
+                    a(href='#')
+                    span Go to Question
+                    img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+            .last_forum_messages_tile
+                .last_forum_messages_tile_inner
+                .last_forum_messages_tile_category
+                    span.last_forum_messages_tile_category__name Category
+                    span.last_forum_messages_tile_category__title Site Surveys & Investigation
+                .last_forum_messages_tile_question
+                    span.last_forum_messages_tile_question__name Question
+                    span.last_forum_messages_tile_question__title What is the purpouse of drilling rings in gas supply industry?
+                .last_forum_messages_tile_info
+                    .last_forum_messages_tile_info_answers
+                    img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
+                    span 118 answers
+                    .latest_news_tile_date
+                    img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
+                    span 24.01.2019
+                    .latest_news_tile_link_block
+                    a(href='#')
+                        span Go to Question
+                        img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+                .latest_news_tile_link_block
+                    a(href='#')
+                    span Go to Question
+                    img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+            .last_forum_messages_tile
+                .last_forum_messages_tile_inner
+                .last_forum_messages_tile_category
+                    span.last_forum_messages_tile_category__name Category
+                    span.last_forum_messages_tile_category__title Structural Steel
+                .last_forum_messages_tile_question
+                    span.last_forum_messages_tile_question__name Question
+                    span.last_forum_messages_tile_question__title What is the purpouse of drilling rings in gas supply industry?
+                .last_forum_messages_tile_info
+                    .last_forum_messages_tile_info_answers
+                    img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
+                    span 118 answers
+                    .latest_news_tile_date
+                    img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
+                    span 24.01.2019
+                    .latest_news_tile_link_block
+                    a(href='#')
+                        span Go to Question
+                        img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+                .latest_news_tile_link_block
+                    a(href='#')
+                    span Go to Question
+                    img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
+            a.last_forum_messages_button.button.button__blue(href='#') Forum
+    section.verified_suppliers_wrapper
+        .container
+            .verified_suppliers_header
+            .main_page_section_heading_block
+                h2 Verified suppliers
+                span Companies that can be trusted
+            .verified_suppliers_arrows
+                img.slider_arrows.slider_arrows__prev(src='/assets/img/assets/slider_arrow_icon.svg', alt='Image')
+                img.slider_arrows.slider_arrows__next(src='/assets/img/assets/slider_arrow_icon.svg', alt='Image')
+        .verified_suppliers_tiles_block.owl-carousel
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+            .verified_suppliers_tile
+            img(src='/assets/img/img/verified_suppliers_demo.png', alt='Image')
+    section.testimonials_wrapper
+        .container
+            .testimonials_header
+            .main_page_section_heading_block
+                h2
+                span Testimonials
+                span People that trust us
+            .testimonials_arrows
+                img.slider_arrows.slider_arrows__prev(src='/assets/img/assets/slider_arrow_icon.svg', alt='Image')
+                img.slider_arrows.slider_arrows__next(src='/assets/img/assets/slider_arrow_icon.svg', alt='Image')
+            .testimonials_tiles_block_wrapper
+            .testimonials_tiles_block.owl-carousel
+                .testimonials_tile
+                .testimonials_tile_info_block
+                    .testimonials_tile_info__image
+                    img(src='/assets/img/img/user_profile_photo.jpg', alt='Image')
+                    .testimonials_tile_info_text
+                    h4.testimonials_tile_info__name Nesterov Yehor
+                    span.testimonials_tile_info__duty General Director, Dannon
+                p.testimonials_tile__text
+                    | “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin...”
+                .testimonials_tile
+                .testimonials_tile_info_block
+                    .testimonials_tile_info__image
+                    img(src='/assets/img/img/user_profile_photo.jpg', alt='Image')
+                    .testimonials_tile_info_text
+                    h4.testimonials_tile_info__name Nesterov Yehor
+                    span.testimonials_tile_info__duty General Director, Dannon
+                p.testimonials_tile__text
+                    | “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin...”
+                .testimonials_tile
+                .testimonials_tile_info_block
+                    .testimonials_tile_info__image
+                    img(src='/assets/img/img/user_profile_photo.jpg', alt='Image')
+                    .testimonials_tile_info_text
+                    h4.testimonials_tile_info__name Nesterov Yehor
+                    span.testimonials_tile_info__duty General Director, Dannon
+                p.testimonials_tile__text
+                    | “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin...”
+                .testimonials_tile
+                .testimonials_tile_info_block
+                    .testimonials_tile_info__image
+                    img(src='/assets/img/img/user_profile_photo.jpg', alt='Image')
+                    .testimonials_tile_info_text
+                    h4.testimonials_tile_info__name Nesterov Yehor
+                    span.testimonials_tile_info__duty General Director, Dannon
+                p.testimonials_tile__text
+                    | “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin...”
+            .testimonials_dots
+    section.latest_news_wrapper
+        .container
+            .main_page_section_heading_block
+            h2 News & Expert Articles
+            span Subheading
+            .latest_news_tiles_block
+            .latest_news_tile
+                a.latest_news_tile_inner(href='#')
+                .latest_news_tile_image
+                    img(src='/assets/img/img/news/01.jpg', alt='Image')
+                .latest_news_tile_content
+                    span.latest_news_tile_category.latest_news_tile_category__news News
+                    h3.latest_news_tile__title Saudi Aramco awards contracts to L&T-led consortium
+                    p.latest_news_tile__desc
+                    | L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields
+                .latest_news_tile_content_info
+                    .latest_news_tile_author
+                    img.svg(src='/assets/img/assets/news/author_icon.svg', alt='Image')
+                    span Adam
+                    .latest_news_tile_views
+                    img.svg(src='/assets/img/assets/news/view_counter_icon.svg', alt='Image')
+                    span 56251
+                    .latest_news_tile_date
+                    img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
+                    span 24.01.2019
+            .latest_news_tile
+                a.latest_news_tile_inner(href='#')
+                .latest_news_tile_image
+                    img(src='/assets/img/img/news/02.jpg', alt='Image')
+                .latest_news_tile_content
+                    span.latest_news_tile_category.latest_news_tile_category__article Expert article
+                    h3.latest_news_tile__title Saudi Aramco awards contracts to L&T-led consortium
+                    p.latest_news_tile__desc
+                    | L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields
+                .latest_news_tile_content_info
+                    .latest_news_tile_author
+                    img.svg(src='/assets/img/assets/news/author_icon.svg', alt='Image')
+                    span Adam Boyshik
+                    .latest_news_tile_views
+                    img.svg(src='/assets/img/assets/news/view_counter_icon.svg', alt='Image')
+                    span 56251
+                    .latest_news_tile_date
+                    img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
+                    span 24.01.2019
+            .latest_news_tile
+                a.latest_news_tile_inner(href='#')
+                .latest_news_tile_image
+                    img(src='/assets/img/img/news/03.jpg', alt='Image')
+                .latest_news_tile_content
+                    span.latest_news_tile_category.latest_news_tile_category__news News
+                    h3.latest_news_tile__title Saudi Aramco awards contracts to L&T-led consortium
+                    p.latest_news_tile__desc
+                    | L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields
+                .latest_news_tile_content_info
+                    .latest_news_tile_author
+                    img.svg(src='/assets/img/assets/news/author_icon.svg', alt='Image')
+                    span Adam Boyshik
+                    .latest_news_tile_views
+                    img.svg(src='/assets/img/assets/news/view_counter_icon.svg', alt='Image')
+                    span 56251
+                    .latest_news_tile_date
+                    img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
+                    span 24.01.2019
+    section.company_registration_banner_wrapper
+        .container
+            .company_registration_banner_content
+            .row
+                h2.company_registration_banner__title Register your company and grow your business
+            .row
+                p.company_registration_banner__desc
+                | Understand that growth for your business is and how o improve your succes rate. Show up in front of buyers at the right time with the right offering.
+                a.button.button__yellow(href='#') Register your company now
+    section.categories_tags_modal_block.modal_block
+        .categories_tags_modal_content
+            .categories_tags_modal_inner_header
+            h3 Tags
+            span.modal_close
+                img(src='/assets/img/assets/modal_close_icon.svg', alt='Image')
+            .categories_tags_modal_inner_body
+
+    
+            
+
     

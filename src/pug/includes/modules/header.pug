@@ -1,0 +1,63 @@
+header.header_wrapper.mobile_transparent
+  .header_navigation_block_wrapper
+    .container
+      .header_navigation_block
+        .header_logo_column
+          img.logo(src='/assets/img/assets/header/logo__white.svg', alt='Logo')
+          .mobile_navigation_buttons_block
+            button.mobile_menu_icon.hamburger.hamburger--arrow(onclick='void(0)', type='button')
+              span.hamburger-box
+                span.hamburger-inner
+        .header_navigation_column
+          .header_navigation_search
+            input(type='search', placeholder='Search request', maxlength='100', required='')
+            button Search
+          a.button.button__blue(href='#') Log in
+          a.button.button__yellow(href='#') Sign up
+          button.desktop_toggle_menu_icon.hamburger.hamburger--slider(onclick='void(0)', type='button')
+            span.hamburger-box
+              span.hamburger-inner
+  .desktop_toggle_menu_block_wrapper
+    .container
+      .desktop_toggle_menu_block
+        ul.desktop_toggle_menu
+          li.desktop_toggle_menu__item.white
+            a(href='#') Suppliers
+          li.desktop_toggle_menu__item.white
+            a(href='#') Intelligence
+          li.desktop_toggle_menu__item.white
+            a(href='#') News
+          li.desktop_toggle_menu__item.white
+            a(href='#') Expert articles
+          li.desktop_toggle_menu__item.white
+            a(href='#') Indices
+          li.desktop_toggle_menu__item.white
+            a(href='#') Contacts
+        a.button.button__yellow(href='#')
+          .button__icon
+            img.svg(src='/assets/img/assets/plus_icon.svg', alt='Image')
+          span Add company
+  .mobile_toggle_menu_block
+    .container
+      ul.mobile_toggle_menu
+        li.mobile_search_block
+          input(type='search', placeholder='Search request', maxlength='100', required='')
+          button Search
+        li.mobile_toggle_menu__item
+          a(href='#') Suppliers
+        li.mobile_toggle_menu__item
+          a(href='#') Intelligence
+        li.mobile_toggle_menu__item
+          a(href='#') News
+        li.mobile_toggle_menu__item
+          a(href='#') Expert articles
+        li.mobile_toggle_menu__item
+          a(href='#') Indices
+        li.mobile_toggle_menu__item
+          a(href='#') Contacts
+      .mobile_toggle_buttons
+        a.button.login_button.button__blue(href='#') Log in
+        a.button.registration_button.button__yellow(href='#') Registration
+        a.button.add_company_button.button__yellow(href='#')
+          img.svg(src='/assets/img/assets/plus_icon.svg', alt='Image')
+          |  Add company

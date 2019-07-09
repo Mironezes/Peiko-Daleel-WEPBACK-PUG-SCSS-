@@ -2,14 +2,14 @@
 @import "utils/vars";
 @import "utils/buttons";
 @import "utils/mixins";
-@import "utils/reset";
-
+@import "utils/normalize";
 
 // Modules
 @import "modules/header.scss";
 @import "modules/footer.scss";
 @import "modules/left_sidebar.scss";
 @import "modules/right_sidebar.scss";
+@import "modules/modals.scss";
 
 html {
   	line-height: $mainLine_Height;
@@ -76,6 +76,11 @@ a {
 
   @media screen and (min-width:1200px) {
       max-width: 1140px
+  }
+
+  @media (min-width: 1440px) {
+	  max-width: 1440px;
+	  padding: 0 60px;
   }
 }
 
@@ -190,6 +195,58 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 
+
+.main_page_banner_wrapper {
+	position: relative;
+	padding-top: 180px;
+	padding-bottom: 100px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center
+}
+
+.main_page_banner_wrapper::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	opacity: .6;
+	z-index: 2;
+	background: #000
+}
+
+.main_page_banner_text_block {
+	position: relative;
+	z-index: 3
+}
+
+.main_page_banner_text_block__title {
+	margin-right: 0;
+	margin-bottom: 30px;
+	color: #FFF
+}
+
+.header_navigation_block_wrapper.white {
+	background: #FFF
+}
+
+.header_navigation_block {
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px
+}
+
+.header_navigation_block .button {
+	height: 40px;
+}
+
+.header_logo_column {
+	display: flex;
+	width: calc(33.33% - 15px)
+}
 
 .main_page_banner_text_block {
 	display: flex;
@@ -337,7 +394,6 @@ input[type=search]::-webkit-search-results-decoration {
 	padding: 50px 0;
 	width: 100%;
 	font-size: 1.5em;
-	font-weight: 100;
 	text-align: center;
 	color: #FFF;
 	transition: .3s;

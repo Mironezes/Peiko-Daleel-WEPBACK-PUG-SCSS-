@@ -1,0 +1,112 @@
+
+.modal_block {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: auto;
+	z-index: 12;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.modal_close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+.categories_tags_modal_block  {
+	width: 80%;
+}
+
+.modal_block.opened {
+	visibility: visible;
+}
+
+.modal_inner_body h2 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 1.15em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.modal_inner_body_button {
+	display: flex;
+	justify-content: center;
+}
+
+.modal_inner_body_button a {
+	width: 120px;
+	margin-right: 25px;
+	justify-content: center;
+}
+
+.modal_inner_body_button a:last-of-type {
+	margin-right: 0;
+}
+
+.modal_block .categories_tags_modal_content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 130px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.categories_tags_modal_block.opened .categories_tags_modal_content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.categories_tags_modal_content {
+	position: relative;
+}
+
+.categories_tags_modal_inner_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 25px;
+	line-height: 1;
+}
+
+.categories_tags_modal_inner_header h3 {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.categories_tags_modal_inner_body {
+	display: flex;
+	flex-wrap: wrap;
+	max-height: 265px;
+	overflow-y: auto;
+}
+
+.modal_backdrop.active {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+	background: rgba(0, 0, 0, 0.62);
+}

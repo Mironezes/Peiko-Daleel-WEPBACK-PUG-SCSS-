@@ -1,9 +1,8 @@
 // JS
-import './js/common'
+import './js/common';
 
 // SCSS
-import './assets/scss/main.scss'
-
+import './assets/scss/main.scss';
 
 // // Vue.js
 // window.Vue = require('vue')

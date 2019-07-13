@@ -6,27 +6,27 @@
 	background: #eceeee
 }
 
-.footer__logo {
+.footer-logo {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 25px
 }
 
-.footer__info {
+.footer-info {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between
 }
 
-.footer__about-us-column,
-.footer__newsletter-column,
-.footer__resources-column {
+.footer-about-us-column,
+.footer-newsletter-column,
+.footer-resources-column {
 	display: flex;
 	flex-direction: column;
 	width: calc(33.33% - 15px)
 }
 
-.footer__info__title {
+.footer-info--title {
 	margin-top: 0;
 	margin-bottom: 20px;
 	font-size: 1.15em;
@@ -34,39 +34,39 @@
 	color: $primary-dark-color
 }
 
-.footer__info__desc {
+.footer-info--desc {
 	font-size: .95em;
 	color: #242e33
 }
 
-.footer__info__desc p {
+.footer-info--desc p {
 	margin-bottom: 0
 }
 
-.footer__info__resources-list {
+.footer-info-resources-list {
 	margin: 0;
 	padding: 0;
 	columns: 2;
 	column-gap: 28px
 }
 
-.footer__info__resources-list__item {
+.footer-info-resources-list--item {
 	list-style: none
 }
 
-.footer__info__resources-list__item a {
+.footer-info-resources-list--item a {
 	font-size: .95em;
 	font-weight: 500
 }
 
-.footer__newsletter__content {
+.footer-newsletter {
 	position: relative;
 	width: 100%;
 	display: flex;
 	margin-bottom: 50px
 }
 
-.footer__newsletter__content input {
+.footer-newsletter input {
 	width: 100%;
 	height: 48px;
 	padding-left: 20px;
@@ -77,12 +77,12 @@
 	transition: .3s
 }
 
-.footer__newsletter__content input:focus,
-.footer__newsletter__content input:hover {
+.footer-newsletter input:focus,
+.footer-newsletter input:hover {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, .15)
 }
 
-.footer__newsletter__content button {
+.footer-newsletter button {
 	position: absolute;
 	width: 138px;
 	height: 40px;
@@ -96,6 +96,6 @@
 	transition: .3s
 }
 
-.footer__newsletter__content button:hover {
+.footer-newsletter button:hover {
 	background: $primary-light-color
 }

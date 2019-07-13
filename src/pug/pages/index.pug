@@ -6,276 +6,277 @@ block variables
 
 
 block content
-    section.main-page-banner(style="background-image: url('/assets/img/img/main_banner_bg.jpg');")
+    section.main-page-banner-wrapper(style="background-image: url('/assets/img/img/main_banner_bg.jpg');")
         .container
-            .main-page-banner__inner
-                .main-page-banner__content
-                    h1.main-page-banner__title OPERATIONAL EXCELLENCE
-                    p.main-page-banner__desc 
+            .main-page-banner-text-block
+                .main-page-banner-text-block-content
+                    h1.main-page-banner-text-block--title OPERATIONAL EXCELLENCE
+                    p.main-page-banner-text-block--desc 
                         | Daleel is a portal that provides unique business intelligence to make the best decisions and allows exchange of knowledge that our industry needs to best meet its requirements.
-    section.main-page-navigation
+    section.main-page-navigation-wrapper
         .container
-            ul.main-page-navigation__inner
-                li.main-page-navigation__item
+            ul.main-page-navigation
+                li.main-page-navigation--item
                     a(href='#')
                         span Suppliers
                         img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
-                li.main-page-navigation__item
+                li.main-page-navigation--item
                     a(href='#')
                         span Intelligence
                         img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
-                li.main-page-navigation__item
+                li.main-page-navigation--item
                     a(href='#')
                         span News
                         img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
-                li.main-page-navigation__item
+                li.main-page-navigation--item
                     a(href='#')
                         span Expert articles
                         img.svg(src='/assets/img/assets/right_chevron_icon.svg', alt='Image')
-    section.main-page-categories
+    section.main-page-categories-wrapper
         .container
-            .main-page-section__heading
+            .main-page-section-heading
                 h2 Intelligence with information that matters
                 span Actionable insight
-            .main-page-categories
-                .main-page-categories__left-column
-                    #main-page-category--first.main-page-category(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
-                        .main-page-category__inner
-                            a.main-page-category__main-link(href='#')
+            .main-page-categories-tiles
+                .main-page-categories-tiles-left-column
+                    #main-page-categories-tile--first.main-page-categories-tile(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
+                        .main-page-categories-tile-inner
+                            a.main-page-categories-tile--main-link(href='#')
                             h3 Site Surveys & Investigation
-                            .main-page-category__desc
+                            .main-page-categories-tile-desc
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
-                            .main-page-category__tags
+                            .main-page-categories-tile-tags
                                 a.tag(href='#') #tag-1
                                 a.tag(href='#') #long-long-tag-2
                                 a.tag(href='#') #tag-1
                                 a.tag(href='#') #long-long-tag-2
                                 button.tag.to-tags-modal ...
-                    #main-page-category--fourth.main-page-category(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
-                        .main-page-category__inner
-                            a.main-page-category__main-link(href='#')
+                    #main-page-categories-tile--fourth.main-page-categories-tile(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
+                        .main-page-categories-tile-inner
+                            a.main-page-categories-tile--main-link(href='#')
                             h3 Site Surveys & Investigation
-                            .main-page-category__desc
+                            .main-page-categories-tile-desc
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                            .main-page-category__tags
+                            .main-page-categories-tile-tags
                                 a.tag(href='#') #tag-1
                                 a.tag(href='#') #long-long-tag-2
                                 button.tag.to-tags-modal ...
-                .main-page-categories__right-column
-                    #main-page-category--second.main-page-category(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
-                        .main-page-category__inner
-                            a.main-page-category__main-link(href='#')
+                .main-page-categories-tiles-right-column
+                    #main-page-categories-tile--second.main-page-categories-tile(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
+                        .main-page-categories-tile-inner
+                            a.main-page-categories-tile--main-link(href='#')
                             h3 Site Surveys & Investigation
-                            .main-page-category__desc
+                            .main-page-categories-tile-desc
                                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum delsa
-                            .main-page-category__tags
+                            .main-page-categories-tile-tags
                                     a.tag(href='#') #tag-1
                                     a.tag(href='#') #long-long-tag-2
                                     button.tag.to-tags-modal ...
-                    .main-page-categories__right-column__sub-columns
-                        .main-page-categories__third-column
-                            #main-page-category--third.main-page-category(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
-                                .main-page-category__inner
-                                    a.main-page-category__main-link(href='#')
+                    .main-page-categories-tiles-right-column--sub-columns
+                        .main-page-categories-tiles--third-column
+                            #main-page-categories-tile--third.main-page-categories-tile(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
+                                .main-page-categories-tile-inner
+                                    a.main-page-categories-tile--main-link(href='#')
                                     h3 Site Surveys & Investigation
-                                    .main-page-category__desc
+                                    .main-page-categories-tile-desc
                                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
-                                    .main-page-category__tags
+                                    .main-page-categories-tile-tags
                                         a.tag(href='#') #tag-1
                                         a.tag(href='#') #long-long-tag-2
                                         button.tag.to-tags-modal ...
-                        .main-page-category--fifth-and-sixth-column
-                            #main-page-category--fifth.main-page-category(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
-                                .main-page-category__inner
-                                    a.main-page-category__main-link(href='#')
+                        .main-page-categories-tile--fifth-and-sixth-column
+                            #main-page-categories-tile--fifth.main-page-categories-tile(style="background-image: url('/assets/img/img/categories/02.jpg') ;")
+                                .main-page-categories-tile-inner
+                                    a.main-page-categories-tile--main-link(href='#')
                                     h3 Site Surveys & Investigation
-                                    .main-page-category__desc
+                                    .main-page-categories-tile-desc
                                         p orem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
-                                    .main-page-category__tags
+                                    .main-page-categories-tile-tags
                                         a.tag(href='#') #tag-1
                                         a.tag(href='#') #long-long-tag-2
                                         button.tag.to-tags-modal ...
-                            #main-page-category--sixth.main-page-category(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
-                                .main-page-category__inner
-                                    a.main-page-category__main-link(href='#')
+                            #main-page-categories-tile--sixth.main-page-categories-tile(style="background-image: url('/assets/img/img/categories/01.jpg') ;")
+                                .main-page-categories-tile-inner
+                                    a.main-page-categories-tile--main-link(href='#')
                                     h3 Site Surveys & Investigation
-                                    .main-page-category__desc
+                                    .main-page-categories-tile-desc
                                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus in, eum deleniti magnam velit aspernatur, impedit odio officiis nemo similique expedita consequatur iusto suscipit. Nihil, ut quis saepe repellendus iste.
-                                    .main-page-category__tags
+                                    .main-page-categories-tile-tags
                                         a.tag(href='#') #tag-1
                                         a.tag(href='#') #long-long-tag-2
                                         button.tag.to-tags-modal ...
                 a.main-page-categories-button.button.button--blue(href='#') View All Categories
-    section.last-forum-messages
+    section.last-forum-messages-wrapper
         .container
-            .main-page-section__heading
+            .main-page-section-heading
                 h2 Questions & Answers
                 span Subheading
-            .last-forum-messages
-                .last-forum-message
-                    .last-forum-message__inner
-                        .last-forum-message__category
-                            span.last-forum-message__category__name Category
-                            span.last-forum-message__category__title Seismic Survey and Data Acquisition
-                        .last-forum-message__question
-                            span.last-forum-message__question__name Question
-                            span.last-forum-message__question__title What is the purpouse of drilling rings in gas supply industry?
-                        .last-forum-message__info
-                            .last-forum-message__info-answers
+            .last-forum-messages-tiles
+                .last-forum-messages-tile
+                    .last-forum-messages-tile-inner
+                        .last-forum-messages-tile-category
+                            span.last-forum-messages-tile-category--name Category
+                            span.last-forum-messages-tile-category--title Seismic Survey and Data Acquisition
+                        .last-forum-messages-tile-question
+                            span.last-forum-messages-tile-question--name Question
+                            span.last-forum-messages-tile-question--title What is the purpouse of drilling rings in gas supply industry?
+                        .last-forum-messages-tile-info
+                            .last-forum-messages-tile-info-answers
                                 img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
                                 span 118 answers
-                            .latest-news__tile-date
+                            .latest-news-tile-date
                                 img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
                                 span 24.01.2019
-                            .latest-news__tile-link
+                            .latest-news-tile-link
                                 a(href='#')
                                     span Go to Question
                                     img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
-                        .latest-news__tile-link
+                        .latest-news-tile-link
                             a(href='#')
                                 span Go to Question
                                 img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
-                .last-forum-message
-                    .last-forum-message__inner
-                        .last-forum-message__category
-                            span.last-forum-message__category__name Category
-                            span.last-forum-message__category__title Storage & Warehousing
-                        .last-forum-message__question
-                            span.last-forum-message__question__name Question
-                            span.last-forum-message__question__title What is the purpouse of drilling rings in gas supply industry?
-                        .last-forum-message__info
-                            .last-forum-message__info-answers
+                .last-forum-messages-tile
+                    .last-forum-messages-tile-inner
+                        .last-forum-messages-tile-category
+                            span.last-forum-messages-tile-category--name Category
+                            span.last-forum-messages-tile-category--title Storage & Warehousing
+                        .last-forum-messages-tile-question
+                            span.last-forum-messages-tile-question--name Question
+                            span.last-forum-messages-tile-question--title What is the purpouse of drilling rings in gas supply industry?
+                        .last-forum-messages-tile-info
+                            .last-forum-messages-tile-info-answers
                                 img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
                                 span 118 answers
-                            .latest-news__tile-date
+                            .latest-news-tile-date
                                 img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
                                 span 24.01.2019
-                            .latest-news__tile-link
+                            .latest-news-tile-link
                                 a(href='#')
                                     span Go to Question
                                     img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
-                        .latest-news__tile-link
+                        .latest-news-tile-link
                             a(href='#')
                                 span Go to Question
                                 img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
-                .last-forum-message
-                    .last-forum-message__inner
-                        .last-forum-message__category
-                            span.last-forum-message__category__name Category
-                            span.last-forum-message__category__title Site Surveys & Investigation
-                        .last-forum-message__question
-                            span.last-forum-message__question__name Question
-                            span.last-forum-message__question__title What is the purpouse of drilling rings in gas supply industry?
-                        .last-forum-message__info
-                            .last-forum-message__info-answers
+                .last-forum-messages-tile
+                    .last-forum-messages-tile-inner
+                        .last-forum-messages-tile-category
+                            span.last-forum-messages-tile-category--name Category
+                            span.last-forum-messages-tile-category--title Site Surveys & Investigation
+                        .last-forum-messages-tile-question
+                            span.last-forum-messages-tile-question--name Question
+                            span.last-forum-messages-tile-question--title What is the purpouse of drilling rings in gas supply industry?
+                        .last-forum-messages-tile-info
+                            .last-forum-messages-tile-info-answers
                                 img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
                                 span 118 answers
-                            .latest-news__tile-date
+                            .latest-news-tile-date
                                 img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
                                 span 24.01.2019
-                            .latest-news__tile-link
+                            .latest-news-tile-link
                                 a(href='#')
                                     span Go to Question
                                     img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
-                        .latest-news__tile-link
+                        .latest-news-tile-link
                             a(href='#')
                                 span Go to Question
                                 img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
-                .last-forum-message
-                    .last-forum-message__inner
-                        .last-forum-message__category
-                            span.last-forum-message__category__name Category
-                            span.last-forum-message__category__title Structural Steel
-                        .last-forum-message__question
-                            span.last-forum-message__question__name Question
-                            span.last-forum-message__question__title What is the purpouse of drilling rings in gas supply industry?
-                        .last-forum-message__info
-                            .last-forum-message__info-answers
+                .last-forum-messages-tile
+                    .last-forum-messages-tile-inner
+                        .last-forum-messages-tile-category
+                            span.last-forum-messages-tile-category--name Category
+                            span.last-forum-messages-tile-category--title Structural Steel
+                        .last-forum-messages-tile-question
+                            span.last-forum-messages-tile-question--name Question
+                            span.last-forum-messages-tile-question--title What is the purpouse of drilling rings in gas supply industry?
+                        .last-forum-messages-tile-info
+                            .last-forum-messages-tile-info-answers
                                 img.svg(src='/assets/img/assets/news/comments_counter_icon.svg', alt='Image')
                                 span 118 answers
-                            .latest-news__tile-date
+                            .latest-news-tile-date
                                 img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
                                 span 24.01.2019
-                            .latest-news__tile-link
+                            .latest-news-tile-link
                                 a(href='#')
                                     span Go to Question
                                     img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
-                        .latest-news__tile-link
+                        .latest-news-tile-link
                             a(href='#')
                                 span Go to Question
                                 img.svg(src='/assets/img/assets/small_arrow_icon.svg', alt='Image')
                 a.last-forum-messages-button.button.button--blue(href='#') Forum
-    section.latest-news
+    section.latest-news-wrapper
         .container
-            .main-page-section__heading
+            .main-page-section-heading
                 h2 News & Expert Articles
                 span Subheading
-            .latest-news__inner
-                .latest-news__tile
-                    a.latest-news__tile__inner(href='#')
-                        .latest-news__tile-image
+            .latest-news-tiles-block
+                .latest-news-tile
+                    a.latest-news-tile-inner(href='#')
+                        .latest-news-tile-image
                             img(src='/assets/img/img/news/01.jpg', alt='Image')
-                        .latest-news__tile-content
-                            span.latest-news__tile-category.latest-news__tile-category--news News
-                            h3.latest-news__tile--title Saudi Aramco awards contracts to L&T-led consortium
-                            p.latest-news__tile--desc
+                        .latest-news-tile-content
+                            span.latest-news-tile-category.latest-news-tile-category--news News
+                            h3.latest-news-tile--title Saudi Aramco awards contracts to L&T-led consortium
+                            p.latest-news-tile--desc
                             | L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields
-                        .latest-news__tile-content-info
-                            .latest-news__tile-author
+                        .latest-news-tile-content-info
+                            .latest-news-tile-author
                                 img.svg(src='/assets/img/assets/news/author_icon.svg', alt='Image')
                                 span Adam
-                            .latest-news__tile-views
+                            .latest-news-tile-views
                                 img.svg(src='/assets/img/assets/news/view_counter_icon.svg', alt='Image')
                                 span 56251
-                            .latest-news__tile-date
+                            .latest-news-tile-date
                                 img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
                                 span 24.01.2019
-                .latest-news__tile
-                    a.latest-news__tile__inner(href='#')
-                        .latest-news__tile-image
+                .latest-news-tile
+                    a.latest-news-tile-inner(href='#')
+                        .latest-news-tile-image
                             img(src='/assets/img/img/news/02.jpg', alt='Image')
-                        .latest-news__tile-content
-                            span.latest-news__tile-category.latest-news__tile-category--article Expert article
-                            h3.latest-news__tile--title Saudi Aramco awards contracts to L&T-led consortium
-                            p.latest-news__tile--desc
+                        .latest-news-tile-content
+                            span.latest-news-tile-category.latest-news-tile-category--article Expert article
+                            h3.latest-news-tile--title Saudi Aramco awards contracts to L&T-led consortium
+                            p.latest-news-tile--desc
                             | L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields
-                        .latest-news__tile-content-info
-                            .latest-news__tile-author
+                        .latest-news-tile-content-info
+                            .latest-news-tile-author
                                 img.svg(src='/assets/img/assets/news/author_icon.svg', alt='Image')
                                 span Adam Boyshik
-                            .latest-news__tile-views
+                            .latest-news-tile-views
                                 img.svg(src='/assets/img/assets/news/view_counter_icon.svg', alt='Image')
                                 span 56251
-                            .latest-news__tile-date
+                            .latest-news-tile-date
                                 img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
                                 span 24.01.2019
-                .latest-news__tile
-                    a.latest-news__tile__inner(href='#')
-                        .latest-news__tile-image
+                .latest-news-tile
+                    a.latest-news-tile-inner(href='#')
+                        .latest-news-tile-image
                             img(src='/assets/img/img/news/03.jpg', alt='Image')
-                        .latest-news__tile-content
-                            span.latest-news__tile-category.latest-news__tile-category--news News
-                            h3.latest-news__tile--title Saudi Aramco awards contracts to L&T-led consortium
-                            p.latest-news__tile--desc
+                        .latest-news-tile-content
+                            span.latest-news-tile-category.latest-news-tile-category--news News
+                            h3.latest-news-tile--title Saudi Aramco awards contracts to L&T-led consortium
+                            p.latest-news-tile--desc
                             | L&T Hydrocarbon Engineering will work with Subsea 7 on projects within Aramco's Zuluf and Berri fields
-                        .latest-news__tile-content-info
-                            .latest-news__tile-author
+                        .latest-news-tile-content-info
+                            .latest-news-tile-author
                                 img.svg(src='/assets/img/assets/news/author_icon.svg', alt='Image')
                                 span Adam Boyshik
-                            .latest-news__tile-views
+                            .latest-news-tile-views
                                 img.svg(src='/assets/img/assets/news/view_counter_icon.svg', alt='Image')
                                 span 56251
-                            .latest-news__tile-date
+                            .latest-news-tile-date
                                 img.svg(src='/assets/img/assets/news/publication_date_icon.svg', alt='Image')
                                 span 24.01.2019
-    section.company-registration-banner
+    section.company-registration-banner-wrapper
         .container
-            .company-registration-banner__content
-                    h2.company-registration-banner__title Register your company and grow your business
-                    .company-registration-banner__desc
-                        p
-                            | Understand that growth for your business is and how o improve your succes rate. Show up in front of buyers at the right time with the right offering.
-                        a.button.button--yellow(href='#') Register your company now
+            .company-registration-banner-content
+                .row
+                    h2.company-registration-banner--title Register your company and grow your business
+                .row
+                    p.company-registration-banner--desc
+                        | Understand that growth for your business is and how o improve your succes rate. Show up in front of buyers at the right time with the right offering.
+                    a.button.button--yellow(href='#') Register your company now
     section.categories-tags-modal-block.modal-block
         .categories-tags-modal-content
             .categories-tags-modal-inner-header
